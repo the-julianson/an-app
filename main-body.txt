@@ -1,0 +1,1 @@
+Vamos a estar viendo en esta demo cómo funcionan los React Server Components. Estos componentes permiten la renderización en el servidor y su entrega al cliente de manera eficiente, mejorando el rendimiento y la experiencia del usuario. Los Server Components se pueden utilizar para cargar datos de manera asincrónica, renderizar HTML en el servidor y mucho más.
