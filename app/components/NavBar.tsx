@@ -21,6 +21,9 @@ const NavBar = () => {
           <Link href="/counter">
             <span className="text-white hover:text-gray-300">Counter</span>
           </Link>
+          <Link href="/counter-display">
+            <span className="text-white hover:text-gray-300">Counter Display</span>
+          </Link>
         </div>
       </div>
     </nav>
