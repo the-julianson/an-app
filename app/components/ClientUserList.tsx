@@ -11,14 +11,20 @@ type User = {
 
 const UserList = () => {
     const [users, setUsers] = useState<User[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
     const hasFetched = useRef(false);
 
     useEffect(() => {
         if (!hasFetched.current) {
             hasFetched.current = true;
-            fetch("https://jsonplaceholder.typicode.com/users")
-                .then(response => response.json())
-                .then(data => setUsers(data));
+            setTimeout(() => {
+                fetch("https://jsonplaceholder.typicode.com/users")
+                    .then(response => response.json())
+                    .then(data => {
+                        setUsers(data);
+                        setLoading(false);
+                    });
+            }, 1000);
         }
     }, []);
 
