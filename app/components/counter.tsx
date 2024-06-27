@@ -1,6 +1,3 @@
-"use client";
-
-
 import { ReactElement, useState } from "react";
 
 const Counter = (props: { someSubComponent?: ReactElement }) => {
